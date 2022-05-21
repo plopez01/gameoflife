@@ -25,8 +25,12 @@ void setup() {
 }
 
 void draw() {
-  background(0);
- 
+  if (running) {
+    background(0);
+  } else {
+    background(30);
+  }
+
   drawGird();
   drawCells();
 
